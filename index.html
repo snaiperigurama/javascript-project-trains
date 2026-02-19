@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <br><br><br><br><br><br><br><br><br><br>
+        <div class="navbar">
+            <h1>STEP RAILWAY</h1>
+            <button>ბილეთების შემოწმება/დაბრუნება</button>
+        </div>
+        <h1>შეიძინეთ მატარებლის ბილეთები ონლაინ</h1>
+        <p>გისურვებთ ბედნიერ მგზავრობას</p>
+        <br><br><br><br><br><br><br><br><br><br>
+        <div class="card">
+            <form action="">
+                <h1>დაჯავშნეთ მატარებლის ბილეთი</h1>
+                <select name="from" id="from" >
+                    <option value="საიდან" selected>საიდან</option>
+                    <option value="თბილისი">თბილისი</option>
+                    <option value="ბათუმი">ბათუმი</option>
+                    <option value="ფოთი">ფოთი</option>
+                </select>
+                <select name="where" id="where">
+                    <option value="სად" selected>სად</option>
+                    <option value="თბილისი">თბილისი</option>
+                    <option value="ბათუმი">ბათუმი</option>
+                    <option value="ფოთი">ფოთი</option>
+                </select>
+                <input type="date" id="date" name="date">
+                <input type="number" placeholder="მგზავრების რაოდენობა">
+                <button type="submit">მატარებლის მოძებნა</button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <img src="./imgs/Screenshot 2026-02-19 215244.png" alt="Not Found!">
+        <div>
+            <h1>მატარებლის ბილეთები</h1>
+            <p>რკინიგზის ბილეთების შესაძენათ თქვენ დაგჭირდებათ თითოეული მგზავრის პირადი ნომერი. გთხოვთ მოამზადეთ ეს იმფორმაცია წინასწარ.</p>
+            <div>
+                <div>
+                    <i class="fa-solid fa-credit-card"></i>
+                    <h2>შეუზღუდავი შეთავაზებები</h2>
+                </div>
+                <div>
+                    <i class="fa-solid fa-clock"></i>
+                    <h2>24/7 მხარ დაჭერა</h2>
+                </div>
+                <div>
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    <h2>100% უსაფრთხო</h2>
+                </div>
+                <div>
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h2>100% უსაფრთხო გადახდა</h2>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2023 <a href="">Step Railway</a>. ყველა უფლება დაცულია.</p>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -8,18 +8,24 @@
 
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
 }
-html body header {
+html .index header {
   position: relative;
   background: linear-gradient(#d6e5f7, white);
   border-bottom: 1px solid rgb(109, 109, 109);
   padding: 64px;
 }
-html body header .navbar {
+html .index header .inp {
+  border: 1px solid rgb(70, 70, 70);
+  border-radius: 6px;
+  padding: 6px;
+}
+html .index header .navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -35,7 +41,7 @@ html body header .navbar {
   flex-direction: row;
   border-bottom: 1px solid rgba(0, 0, 0, 0.151);
 }
-html body header .navbar button {
+html .index header .navbar button {
   margin: 30px;
   background-color: rgb(48, 46, 177);
   color: white;
@@ -45,27 +51,131 @@ html body header .navbar button {
   padding: 12px;
   border-radius: 6px;
 }
-html body header .navbar h1 {
+html .index header .navbar a {
+  text-decoration: none;
+}
+html .index header .navbar a h1 {
   margin: 30px;
   font-family: "Sour Gummy";
   color: rgb(51, 51, 51);
   font-weight: 400;
   font-size: 40px;
 }
-html body header .card {
-  position: absolute;
-  bottom: -9vh;
-  left: 13vw;
+html .index header .card {
+  display: flex;
   border: 1px solid rgb(114, 114, 114);
-  padding-left: 20vw;
-  padding-right: 20vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
   padding-top: 5vh;
   padding-bottom: 5vh;
   border-radius: 12px;
   background-color: white;
 }
-html body header .card h1 {
+html .index header .card button {
+  background-color: rgb(48, 46, 177);
+  color: white;
+  font-weight: 700;
+  padding: 10px;
+  border: 1px solid rgb(46, 46, 46);
+  border-radius: 6px;
+}
+html .index header .card h1 {
   display: flex;
   justify-self: start;
   align-self: flex-start;
+  margin-bottom: 24px;
+}
+html .index main {
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+}
+html .index main .icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+html .index main .icon i {
+  font-size: 24px;
+}
+html .index main .icon h2 {
+  display: block;
+  margin-left: 10px;
+}
+html .index main img {
+  width: 40vw;
+}
+html .index footer p {
+  margin-left: 10vw;
+}
+html .index footer p a {
+  color: black;
+}
+html .purchase header .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+html .purchase header .navbar button {
+  margin: 30px;
+  background-color: rgb(48, 46, 177);
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  border: 1px solid rgba(0, 0, 0, 0.342);
+  padding: 12px;
+  border-radius: 6px;
+}
+html .purchase header .navbar a {
+  text-decoration: none;
+}
+html .purchase header .navbar a h1 {
+  margin: 30px;
+  font-family: "Sour Gummy";
+  color: rgb(51, 51, 51);
+  font-weight: 400;
+  font-size: 40px;
+}
+html .purchase main {
+  display: flex;
+  justify-content: center;
+  color: rgb(95, 95, 95);
+}
+
+@media screen and (max-width: 810px) {
+  .index header .inp {
+    margin-top: 10px;
+  }
+  .index div {
+    display: flex;
+    flex-direction: column;
+  }
+  .index div .inp {
+    padding: 3px !important;
+  }
+}
+@media screen and (max-width: 760px) {
+  .index .navbar {
+    padding-right: 0;
+  }
+  .index main {
+    display: grid !important;
+    grid-template-columns: 1fr 2fr 1fr !important;
+  }
+  .index main img {
+    display: none;
+  }
+  .index .icon h2 {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .index .navbar {
+    flex-direction: column !important;
+    display: flex !important;
+    align-items: center;
+    padding: 0 !important;
+  }
+  .index form h1 {
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=style.css.map */

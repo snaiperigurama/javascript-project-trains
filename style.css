@@ -137,8 +137,165 @@ html .purchase header .navbar a h1 {
 }
 html .purchase main {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   color: rgb(95, 95, 95);
+}
+html .purchase main section .title {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-size: 24px;
+  border: 1px solid rgb(220, 227, 235);
+  padding: 20px;
+}
+html .purchase main section .cards {
+  width: 80vw;
+}
+html .purchase main section .cards .card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-size: 24px;
+  padding: 20px;
+  font-size: 32px;
+  background-color: rgba(221, 233, 248, 0.548);
+  margin-bottom: 22px;
+}
+html .purchase main section .cards .card .no_dash {
+  border-left: none;
+}
+html .purchase main section .cards .card div {
+  padding-left: 10px;
+  border-left: 1px dashed rgb(177, 183, 194);
+  gap: 30px;
+}
+html .purchase main section .cards .card div h6 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+html .purchase main section .cards .card div button {
+  color: white;
+  background-color: rgb(48, 46, 177);
+  border: 1px solid rgb(196, 196, 196);
+  font-weight: 800;
+  border-radius: 6px;
+  font-size: 20px;
+  padding: 8px;
+  padding-left: 18px;
+  padding-right: 18px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+html .purchase footer p {
+  margin-left: 10vw;
+}
+html .purchase footer p a {
+  color: black;
+}
+html .checkout header .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+html .checkout header .navbar button {
+  margin: 30px;
+  background-color: rgb(48, 46, 177);
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  border: 1px solid rgba(0, 0, 0, 0.342);
+  padding: 12px;
+  border-radius: 6px;
+}
+html .checkout header .navbar a {
+  text-decoration: none;
+}
+html .checkout header .navbar a h1 {
+  margin: 30px;
+  font-family: "Sour Gummy";
+  color: rgb(51, 51, 51);
+  font-weight: 400;
+  font-size: 40px;
+}
+html .checkout header .blue {
+  background-color: blue;
+  color: white;
+}
+html .checkout header .blue p {
+  margin-left: 400px;
+  font-size: 20px;
+  font-weight: 700;
+}
+html .checkout main section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+html .checkout main section .card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 24px;
+  padding: 20px;
+  font-size: 32px;
+  background-color: rgba(221, 233, 248, 0.548);
+  margin-bottom: 22px;
+  width: 50vw;
+}
+html .checkout main section .card .no_dash {
+  border-left: none;
+}
+html .checkout main section .card div {
+  padding-left: 10px;
+  border-left: 1px dashed rgb(177, 183, 194);
+  gap: 30px;
+}
+html .checkout main section .card div h6 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+html .checkout main form .inp_first {
+  width: 20vw;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  border: solid 1px rgb(175, 174, 174);
+}
+html .checkout main form .background {
+  background-color: rgb(27, 27, 255);
+  padding: 20px;
+  color: white;
+  font-weight: 700;
+  border: 1px solid rgb(201, 199, 199);
+  border-radius: 4px;
+}
+html .checkout main form .card_passanger {
+  display: flex;
+  align-items: center;
+}
+html .checkout main form .card_passanger input {
+  padding: 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  border: solid 1px rgb(175, 174, 174);
+  margin: 8px;
+}
+html .checkout main form .card_passanger button {
+  padding: 12px;
+  background-color: rgb(27, 27, 255);
+  color: white;
+  font-weight: 700;
+  border: 1px solid rgb(201, 199, 199);
+  border-radius: 4px;
+}
+html .checkout footer {
+  background-color: rgb(200, 219, 247);
+}
+html .checkout footer p {
+  margin-left: 10vw;
+}
+html .checkout footer p a {
+  color: black;
 }
 
 @media screen and (max-width: 810px) {

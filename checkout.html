@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="checkout">
+    <header>
+        <div class="navbar">
+            <a href="./index.html"><h1>STEP RAILWAY</h1></a>
+            <button>ბილეთების შემოწმება/დაბრუნება</button>
+        </div>
+        <section class="blue">
+            <br><br><br><p>მგზავრების მონაცემები</p><br><br><br><br><br><br><br>
+        </section>
+    </header>
+
+    <br><br><br><br><br><br>
+
+    <main>
+        <section>
+            <h1 class="title">შეიყვანეთ თქვენი ინფორმაცია</h1>
+            <br><hr><br><br>
+            <div id="card" onclick="">
+                <!-- <div class="card">
+                    <div class="no_dash">
+                        <h6 class="number">${places.number}</h6>
+                        <h6 class="name">${places.name} Express</h6>
+                    </div>
+                    <div>
+                        <h6 class="from_time">${places.departure}</h6>
+                        <h6 class="from_place">${places.from}</h6>
+                    </div>
+                    <div>
+                        <h6 class="where_time">${places.arrive}</h6>
+                        <h6 class="where_place">${places.to}</h6>
+                    </div>
+                </div> -->
+            </div>
+            <br><hr><br><br>
+            <h1>საკონტაქტო ინფორმაცია</h1><br><br><br>
+            <form action="">
+                <input class="inp_first" type="email" required placeholder="იმეილი">
+                <input class="inp_first" type="text" required placeholder="ტელეფონის ნომერი">
+                <br><br><br>
+                <h1>მგზავრების ინფორმაცია</h1>
+                <br><br><br><br>
+                <div id="card_passangers">
+                    <!-- <h1>მგზავრი ${passanger}</h1><br><br>
+                    <div class="card_passanger">
+                        <span class="background">ადგილი: 0</span>
+                        <input type="text" required placeholder="სახელი">
+                        <input type="text" required placeholder="გვარი">
+                        <input type="text" required placeholder="პირადი ნომერი">
+                        <button type="button"><h4>ადგილის</h4><span>არჩევა</span></button>
+                    </div><br><br><br> -->
+                </div>
+                <div>
+                    <h1>გადახდა</h1>
+                    <h2>ფასი: </h2>
+                    <button type="submit">გადახდა</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <br><br><br><br><br>
+        <hr><br><br><br>
+        <p>© 2023 <a href="">Step Railway</a>. ყველა უფლება დაცულია.</p>
+        <br><br><br><br><br>
+    </footer>
+
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

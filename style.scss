@@ -8,6 +8,14 @@
 }
 
 
+button{
+
+    &:hover{
+        background-color: rgb(76, 74, 187) !important;
+        transition: all 0.4s ease-in-out !important;
+    }
+}
+
 *{
     margin: 0;
     box-sizing: border-box;

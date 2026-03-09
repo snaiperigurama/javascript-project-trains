@@ -45,9 +45,11 @@
             </div>
             <br><hr><br><br>
             <h1>საკონტაქტო ინფორმაცია</h1><br><br><br>
-            <form action="">
-                <input class="inp_first" type="email" required placeholder="იმეილი">
-                <input class="inp_first" type="text" required placeholder="ტელეფონის ნომერი">
+            <form action="" id="checkout_form">
+                <div class="div">
+                    <input class="inp_first" type="email" required placeholder="იმეილი">
+                    <input class="inp_first" type="text" required placeholder="ტელეფონის ნომერი">
+                </div>
                 <br><br><br>
                 <h1>მგზავრების ინფორმაცია</h1>
                 <br><br><br><br>
@@ -65,7 +67,7 @@
                     <h1>გადახდა</h1>
                     <h2>ფასი: <span id="total_price">0</span></h2>
                     <br><br><br>
-                    <button type="submit" class="purchase_btn" id="buy_btn">გადახდა</button>
+                    <button type="button" class="purchase_btn" id="buy_btn">გადახდა</button>
                     <br><br><br><br><br><br>
                 </div>
             </form>

@@ -21,6 +21,16 @@ html{
             background: linear-gradient(#d6e5f7, white);
             border-bottom: 1px solid rgb(109, 109, 109);
             padding: 64px;
+            .login_btn{
+                margin: 30px;
+                background-color: rgb(48, 46, 177);
+                color: white;
+                font-size: 18px;
+                font-weight: 700;
+                border: 1px solid rgba(0, 0, 0, 0.342);
+                padding: 12px;
+                border-radius: 6px;
+            }
             .inp{
                 border: 1px solid rgb(70, 70, 70);
                 border-radius: 6px;
@@ -271,6 +281,9 @@ html{
                 }
             }
             form{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 .purchase_btn{
                     padding: 12px;
                     background-color: rgb(27, 27, 255);
@@ -279,13 +292,19 @@ html{
                     border: 1px solid rgb(201, 199, 199);
                     border-radius: 4px;
                 }
-                .inp_first{
-                    width: 20vw;
-                    margin: 10px;
-                    padding: 20px;
-                    border-radius: 4px;
-                    font-size: 16px;
-                    border: solid 1px rgb(175, 174, 174);
+                .div{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    .inp_first{
+                        width: 20vw;
+                        margin: 10px;
+                        padding: 20px;
+                        border-radius: 4px;
+                        font-size: 16px;
+                        border: solid 1px rgb(175, 174, 174);
+                    }
                 }
                 .background{
                     background-color: rgb(27, 27, 255);
@@ -318,6 +337,126 @@ html{
         }
         footer{
             background-color: rgb(200, 219, 247);
+            p{
+                margin-left: 10vw;
+                a{
+                    color: black;
+                }
+            }
+        }
+    }
+    .login{
+        background: linear-gradient(white, skyblue);
+        margin: 0;
+        padding: 0;
+        section{
+            margin-bottom: 200px;
+            display: flex;
+            justify-content: center;
+            justify-self: center;
+            padding: 20px;
+            width: 300px;
+            border: 1px solid rgb(154, 184, 224);
+            border-radius: 12px;
+            background-color: rgb(244, 252, 255);
+            p{
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+            form{
+                gap: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                input{
+                    border: 1px solid rgb(165, 187, 216);
+                    border-radius: 12px;
+                    padding: 12px;
+                }
+                select{
+                    border: 1px solid rgb(165, 187, 216);
+                    border-radius: 12px;
+                    padding: 12px;
+                    color: rgb(128, 128, 128);
+                }
+                button{
+                    border: 1px solid rgb(165, 187, 216);
+                    border-radius: 12px;
+                    padding: 12px;
+                    background-color: rgb(73, 25, 248);
+                    color: white;
+                    font-weight: 700;
+                }
+            }
+        }
+        footer{
+            background-color: rgb(255, 255, 255);
+            p{
+                margin-left: 10vw;
+                a{
+                    color: black;
+                }
+            }
+        }
+    }
+    .ticketcheck{
+        header{
+            .navbar{
+                display: flex;
+                justify-content: space-between;
+                button{
+                    margin: 30px;
+                    background-color: rgb(48, 46, 177);
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 700;
+                    border: 1px solid rgba(0, 0, 0, 0.342);
+                    padding: 12px;
+                    border-radius: 6px;
+                }
+                a{
+                    text-decoration: none;
+                    h1{
+                        margin: 30px;
+                        font-family: "Sour Gummy";
+                        color: rgb(51, 51, 51);
+                        font-weight: 400;
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+        .p{
+            font-size: 24px;
+            display: flex;
+            justify-self: center;
+            margin-bottom: 30px;
+        }
+        div{
+            text-align: center;
+            margin-bottom:20px;
+            button{
+                background-color: rgb(48, 46, 177);
+                color: white;
+                font-size: 18px;
+                font-weight: 700;
+                border: 1px solid rgba(0, 0, 0, 0.342);
+                padding: 12px;
+                border-radius: 6px;
+            }
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            .train-card.ticket_card{
+                border: 1px solid rgb(185, 185, 185);
+                width: 290px;
+                padding: 10px;
+                border-radius: 12px;
+            }
+        }
+        footer{
+            background-color: rgb(255, 255, 255);
             p{
                 margin-left: 10vw;
                 a{
@@ -367,16 +506,689 @@ html{
 }
 
 @media screen and (max-width: 370px) {
-    .index{
-        .navbar{
-            flex-direction: column !important;
-            display: flex !important;
-            align-items: center;
-            padding: 0 !important;
+    .navbar{
+        flex-direction: column !important;
+        display: flex !important;
+        align-items: center;
+        padding: 0 !important;
+    }
+    form{
+        h1{
+            font-size: 24px;
         }
-        form{
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .checkout{
+        header{
+            .navbar{
+                display: flex;
+                justify-content: space-between;
+                button{
+                    margin: 30px;
+                    background-color: rgb(48, 46, 177);
+                    color: white;
+                    font-size: 10px;
+                    font-weight: 700;
+                    border: 1px solid rgba(0, 0, 0, 0.342);
+                    padding: 12px;
+                    border-radius: 6px;
+                }
+                a{
+                    text-decoration: none;
+                    h1{
+                        margin: 30px;
+                        font-family: "Sour Gummy";
+                        color: rgb(51, 51, 51);
+                        font-weight: 400;
+                        font-size: 40px;
+                    }
+                }
+            }
+            .blue{
+                background-color: blue;
+                color: white;
+                p{
+                    margin-left: 20vw !important;
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+            }
+        }
+        main{
+            section{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                .card{
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    font-size: 24px;
+                    padding: 20px;
+                    font-size: 16px;
+                    background-color: rgba(221, 233, 248, 0.548);
+                    margin-bottom: 22px;
+                    width: 50vw;
+                    .no_dash{
+                        border-left: none;
+                    }
+                    div{
+                        padding-left: 10px;
+                        border-left: 1px dashed rgb(177, 183, 194);
+                        font-size: 18px;
+                        gap: 30px;
+                        h6{
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .purchase_btn{
+                    padding: 12px;
+                    background-color: rgb(27, 27, 255);
+                    color: white;
+                    font-weight: 700;
+                    border: 1px solid rgb(201, 199, 199);
+                    border-radius: 4px;
+                }
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    .inp_first{
+                        width: 20vw;
+                        margin: 10px;
+                        padding: 20px;
+                        border-radius: 4px;
+                        font-size: 12px !important;
+                        border: solid 1px rgb(175, 174, 174);
+                    }
+                }
+                .background{
+                    background-color: rgb(27, 27, 255);
+                    padding: 20px;
+                    color: white;
+                    font-weight: 700;
+                    border: 1px solid rgb(201, 199, 199);
+                    border-radius: 4px;
+                }
+                .card_passanger{
+                    display: flex;
+                    align-items: center;
+                    input{
+                        padding: 20px;
+                        border-radius: 4px;
+                        font-size: 16px;
+                        border: solid 1px rgb(175, 174, 174);
+                        margin: 8px;
+                    }
+                    button{
+                        padding: 12px;
+                        background-color: rgb(27, 27, 255);
+                        color: white;
+                        font-weight: 700;
+                        border: 1px solid rgb(201, 199, 199);
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+        footer{
+            background-color: rgb(200, 219, 247);
+            p{
+                margin-left: 10vw;
+                a{
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 490px) {
+    .checkout{
+        h1{
+            font-size: 22px;
+        }
+        header{
+            .navbar{
+                display: flex;
+                justify-content: space-between;
+                button{
+                    margin: 30px;
+                    background-color: rgb(48, 46, 177);
+                    color: white;
+                    font-size: 10px;
+                    font-weight: 700;
+                    border: 1px solid rgba(0, 0, 0, 0.342);
+                    padding: 12px;
+                    border-radius: 6px;
+                }
+                a{
+                    text-decoration: none;
+                    h1{
+                        margin: 30px;
+                        font-family: "Sour Gummy";
+                        color: rgb(51, 51, 51);
+                        font-weight: 400;
+                        font-size: 20px;
+                    }
+                }
+            }
+            .blue{
+                background-color: blue;
+                color: white;
+                p{
+                    margin-left: 20vw !important;
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+            }
+        }
+        main{
+            section{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                .card{
+                    width: 70vw !important;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    font-size: 24px;
+                    padding: 20px;
+                    font-size: 16px;
+                    background-color: rgba(221, 233, 248, 0.548);
+                    margin-bottom: 22px;
+                    width: 50vw;
+                    .no_dash{
+                        border-left: none;
+                    }
+                    div{
+                        padding-left: 10px;
+                        border-left: 1px dashed rgb(177, 183, 194);
+                        font-size: 18px;
+                        gap: 30px;
+                        h6{
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .purchase_btn{
+                    padding: 12px;
+                    background-color: rgb(27, 27, 255);
+                    color: white;
+                    font-weight: 700;
+                    border: 1px solid rgb(201, 199, 199);
+                    border-radius: 4px;
+                }
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    .inp_first{
+                        width: 20vw;
+                        margin: 10px;
+                        padding: 20px;
+                        border-radius: 4px;
+                        font-size: 16px;
+                        border: solid 1px rgb(175, 174, 174);
+                    }
+                }
+                .background{
+                    background-color: rgb(27, 27, 255);
+                    padding: 20px;
+                    color: white;
+                    font-weight: 700;
+                    border: 1px solid rgb(201, 199, 199);
+                    border-radius: 4px;
+                }
+                .card_passanger{
+                    display: flex;
+                    align-items: center;
+                    input{
+                        padding: 20px;
+                        border-radius: 4px;
+                        font-size: 16px;
+                        border: solid 1px rgb(175, 174, 174);
+                        margin: 8px;
+                    }
+                    button{
+                        padding: 12px;
+                        background-color: rgb(27, 27, 255);
+                        color: white;
+                        font-weight: 700;
+                        border: 1px solid rgb(201, 199, 199);
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+        footer{
+            background-color: rgb(200, 219, 247);
+            p{
+                margin-left: 10vw;
+                a{
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 860px) {
+        .purchase{
             h1{
-                font-size: 24px;
+                font-size: 20px;
+            }
+            p{
+                font-size: 16px;
+            }
+        header{
+            .navbar{
+                display: flex;
+                justify-content: space-between;
+                button{
+                    margin: 30px;
+                    background-color: rgb(48, 46, 177);
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 700;
+                    border: 1px solid rgba(0, 0, 0, 0.342);
+                    padding: 12px;
+                    border-radius: 6px;
+                }
+                a{
+                    text-decoration: none;
+                    h1{
+                        margin: 30px;
+                        font-family: "Sour Gummy";
+                        color: rgb(51, 51, 51);
+                        font-weight: 400;
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+        main{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            color: rgb(95, 95, 95);
+            section{
+                .title{
+                    width: 80vw;
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    font-size: 24px;
+                    border: 1px solid rgb(220, 227, 235);
+                    padding: 20px;
+                }
+                .cards{
+                    width: 80vw;
+                    .card{
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr);
+                        font-size: 24px;
+                        padding: 20px;
+                        font-size: 32px;
+                        background-color: rgba(221, 233, 248, 0.548);
+                        margin-bottom: 22px;
+                        .no_dash{
+                            border-left: none;
+                        }
+                        div{
+                            padding-left: 10px;
+                            border-left: 1px dashed rgb(177, 183, 194);
+                            gap: 30px;
+                            h6{
+                                margin-top: 20px;
+                                margin-bottom: 20px;
+                                font-size: 16px;
+                            }
+                            button{
+                                color: white;
+                                background-color: rgb(48, 46, 177);
+                                border: 1px solid rgb(196, 196, 196);
+                                font-weight: 800;
+                                border-radius: 6px;
+                                margin-top: 24px;
+                                font-size: 16px !important;
+                                padding: 8px;
+                                padding-left: 18px;
+                                padding-right: 18px;
+                                display: flex;
+                                justify-self: center;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            p{
+                margin-left: 10vw;
+                a{
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 860px) {
+        .purchase{
+            h1{
+                font-size: 20px;
+            }
+            p{
+                font-size: 12px;
+            }
+        header{
+            .navbar{
+                display: flex;
+                justify-content: space-between;
+                button{
+                    margin: 30px;
+                    background-color: rgb(48, 46, 177);
+                    color: white;
+                    font-size: 18px !important;
+                    font-weight: 700;
+                    border: 1px solid rgba(0, 0, 0, 0.342);
+                    padding: 12px;
+                    border-radius: 6px;
+                }
+                a{
+                    text-decoration: none;
+                    h1{
+                        margin: 30px;
+                        font-family: "Sour Gummy";
+                        color: rgb(51, 51, 51);
+                        font-weight: 400;
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+        main{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            color: rgb(95, 95, 95);
+            section{
+                .title{
+                    width: 80vw;
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    font-size: 24px;
+                    border: 1px solid rgb(220, 227, 235);
+                    padding: 20px;
+                }
+                .cards{
+                    width: 80vw;
+                    .card{
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr);
+                        font-size: 24px;
+                        padding: 20px;
+                        font-size: 32px;
+                        background-color: rgba(221, 233, 248, 0.548);
+                        margin-bottom: 22px;
+                        .no_dash{
+                            border-left: none;
+                        }
+                        div{
+                            padding-left: 10px;
+                            border-left: 1px dashed rgb(177, 183, 194);
+                            gap: 30px;
+                            h6{
+                                margin-top: 20px;
+                                margin-bottom: 20px;
+                                font-size: 12px;
+                            }
+                            button{
+                                color: white;
+                                background-color: rgb(48, 46, 177);
+                                border: 1px solid rgb(196, 196, 196);
+                                font-weight: 800;
+                                border-radius: 6px;
+                                margin-top: 10px;
+                                font-size: 10px !important;
+                                padding: 8px;
+                                padding-left: 18px;
+                                padding-right: 18px;
+                                display: flex;
+                                justify-self: center;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            p{
+                margin-left: 10vw;
+                a{
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+        .purchase{
+            h1{
+                font-size: 20px;
+            }
+            p{
+                font-size: 12px;
+            }
+        header{
+            .navbar{
+                display: flex;
+                justify-content: space-between;
+                button{
+                    margin: 30px;
+                    background-color: rgb(48, 46, 177);
+                    color: white;
+                    font-size: 18px !important;
+                    font-weight: 700;
+                    border: 1px solid rgba(0, 0, 0, 0.342);
+                    padding: 12px;
+                    border-radius: 6px;
+                }
+                a{
+                    text-decoration: none;
+                    h1{
+                        margin: 30px;
+                        font-family: "Sour Gummy";
+                        color: rgb(51, 51, 51);
+                        font-weight: 400;
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+        main{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            color: rgb(95, 95, 95);
+            section{
+                .title{
+                    width: 80vw;
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    font-size: 24px;
+                    border: 1px solid rgb(220, 227, 235);
+                    padding: 20px;
+                }
+                .cards{
+                    width: 80vw;
+                    .card{
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr);
+                        font-size: 24px;
+                        padding: 20px;
+                        font-size: 32px;
+                        background-color: rgba(221, 233, 248, 0.548);
+                        margin-bottom: 22px;
+                        .no_dash{
+                            border-left: none;
+                        }
+                        div{
+                            padding-left: 10px;
+                            border-left: 1px dashed rgb(177, 183, 194);
+                            gap: 30px;
+                            h6{
+                                margin-top: 20px;
+                                margin-bottom: 20px;
+                                font-size: 10px;
+                            }
+                            button{
+                                color: white;
+                                background-color: rgb(48, 46, 177);
+                                border: 1px solid rgb(196, 196, 196);
+                                font-weight: 800;
+                                border-radius: 6px;
+                                margin-top: 10px;
+                                font-size: 10px !important;
+                                padding: 8px;
+                                padding-left: 18px;
+                                padding-right: 18px;
+                                display: flex;
+                                justify-self: center;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            p{
+                margin-left: 10vw;
+                a{
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+        .purchase{
+            h1{
+                font-size: 20px;
+            }
+            p{
+                font-size: 12px;
+            }
+        header{
+            .navbar{
+                display: flex;
+                justify-content: space-between;
+                button{
+                    margin: 30px;
+                    background-color: rgb(48, 46, 177);
+                    color: white;
+                    font-size: 18px !important;
+                    font-weight: 700;
+                    border: 1px solid rgba(0, 0, 0, 0.342);
+                    padding: 12px;
+                    border-radius: 6px;
+                }
+                a{
+                    text-decoration: none;
+                    h1{
+                        margin: 30px;
+                        font-family: "Sour Gummy";
+                        color: rgb(51, 51, 51);
+                        font-weight: 400;
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+        main{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            color: rgb(95, 95, 95);
+            section{
+                .title{
+                    width: 80vw;
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    font-size: 24px;
+                    border: 1px solid rgb(220, 227, 235);
+                    padding: 20px;
+                }
+                .cards{
+                    width: 80vw;
+                    .card{
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr);
+                        font-size: 24px;
+                        padding: 20px;
+                        font-size: 32px;
+                        background-color: rgba(221, 233, 248, 0.548);
+                        margin-bottom: 22px;
+                        .no_dash{
+                            border-left: none;
+                        }
+                        div{
+                            padding-left: 10px;
+                            border-left: 1px dashed rgb(177, 183, 194);
+                            gap: 30px;
+                            h6{
+                                margin-top: 20px;
+                                margin-bottom: 20px;
+                                font-size: 10px;
+                            }
+                            button{
+                                color: white;
+                                background-color: rgb(48, 46, 177);
+                                border: 1px solid rgb(196, 196, 196);
+                                font-weight: 800;
+                                border-radius: 6px;
+                                margin-top: 10px;
+                                font-size: 10px !important;
+                                padding: 8px;
+                                padding-left: 7px !important;
+                                padding-right: 7px !important;
+                                display: flex;
+                                justify-self: center;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        footer{
+            p{
+                margin-left: 10vw;
+                a{
+                    color: black;
+                }
             }
         }
     }
